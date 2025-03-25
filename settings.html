@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - To-Do List</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('https://source.unsplash.com/1920x1080/?office,workspace'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            color: #333;
+        }
+
+        .container {
+            width: 600px;
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(15px);
+            overflow: hidden;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            padding: 10px 20px;
+            color: #3498db;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #2980b9;
+        }
+
+        .settings-option {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        select, input[type="checkbox"] {
+            margin-left: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 16px;
+            color: #888;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Settings</h1>
+
+        <!-- Navigation Links -->
+        <div class="navbar">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="task_details.html">Task Details</a>
+        </div>        
+
+        <!-- Settings Options -->
+        <div class="settings-option">
+            <label for="theme">Choose Theme:</label>
+            <select id="theme" disabled>
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+                <option value="colorful">Colorful</option>
+            </select>
+        </div>
+
+        <div class="settings-option">
+            <label for="notifications">Enable Notifications:</label>
+            <input type="checkbox" id="notifications" disabled checked>
+            <label for="notifications">On</label>
+        </div>
+
+        <div class="settings-option">
+            <label for="language">Select Language:</label>
+            <select id="language" disabled>
+                <option value="english">English</option>
+                <option value="spanish">Spanish</option>
+                <option value="french">French</option>
+            </select>
+        </div>
+
+        <div class="settings-option">
+            <label for="dark-mode">Enable Dark Mode:</label>
+            <input type="checkbox" id="dark-mode" disabled>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 To-Do List App. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

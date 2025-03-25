@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Details - To-Do List</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('https://source.unsplash.com/1920x1080/?task,workspace'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            color: #333;
+        }
+
+        .container {
+            width: 600px;
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(15px);
+            overflow: hidden;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            padding: 10px 20px;
+            color: #3498db;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #2980b9;
+        }
+
+        .task-details {
+            margin-bottom: 20px;
+        }
+
+        .task-details label {
+            font-weight: bold;
+        }
+
+        .task-details span {
+            display: block;
+            margin-top: 5px;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .task-details .date-time {
+            font-size: 16px;
+            color: #888;
+        }
+
+        .task-details .description {
+            margin-top: 15px;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 16px;
+            color: #888;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Task Details</h1>
+
+        <!-- Navigation Links -->
+        <div class="navbar">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="settings.html">Settings</a>
+        </div>
+
+        <!-- Task Details -->
+        <div class="task-details">
+            <label for="taskTitle">Task Title:</label>
+            <span id="taskTitle">Prepare presentation for the client meeting.</span>
+        </div>
+
+        <div class="task-details">
+            <label for="taskDueDate">Due Date:</label>
+            <span id="taskDueDate">March 27, 2025</span>
+        </div>
+
+        <div class="task-details">
+            <label for="taskPriority">Priority:</label>
+            <span id="taskPriority">High</span>
+        </div>
+
+        <div class="task-details">
+            <label for="taskDescription">Description:</label>
+            <span id="taskDescription" class="description">
+                Create the slides and prepare the talking points for the upcoming client meeting. Focus on the project milestones, budget, and deliverables.
+            </span>
+        </div>
+
+        <div class="task-details">
+            <label for="taskStatus">Status:</label>
+            <span id="taskStatus">In Progress</span>
+        </div>
+
+        <div class="task-details">
+            <span class="date-time">Last Updated: March 24, 2025, 10:00 AM</span>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 To-Do List App. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
